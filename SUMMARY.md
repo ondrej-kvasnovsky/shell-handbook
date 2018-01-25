@@ -4,5 +4,5 @@
 * [Shell Implementations](chapter1.md)
 * [Scripting](scripting.md)
   * [User Input](scripting/user-input.md)
-  * Loops
+  * [Loops](scripting/loops.md)
 
