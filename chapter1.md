@@ -64,5 +64,14 @@ Hello World!
 Hello World!
 ```
 
+### What shell am I using?
+
+Here is how to find what version of shell is currently used on your system.
+
+```
+➜ echo $0
+-zsh
+```
+
 
 
