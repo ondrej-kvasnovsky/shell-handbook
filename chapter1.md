@@ -73,5 +73,41 @@ Here is how to find what version of shell is currently used on your system.
 -zsh
 ```
 
+### What is `#!/bin/bash` used for?
+
+When we run .`/hello-world.sh` in the command line, we can tell what shell should be used to execute the shell script. Lets try it out and observe what shell is executing our script. 
+
+If we want to default to `bash` shell, we add `#!/bin/bash` on the first line of the script. 
+
+```
+#!/bin/bash
+echo "Hello World!"
+ps -o args= -p "$$"
+```
+
+When we start the script, we can see that the `bash` shell is used. 
+
+```
+➜ ./hello-world.sh
+Hello World!
+/bin/bash ./hello-world.sh
+```
+
+Lets try to do the same with `zsh`. 
+
+```
+#!/bin/zsh
+echo "Hello World!"
+ps -o args= -p "$$"
+```
+
+Now we execute the shell script in the same way. 
+
+```
+➜  shell ./hello-world-zsh.sh
+Hello World!
+/bin/zsh ./hello-world-zsh.sh
+```
+
 
 
