@@ -5,4 +5,5 @@
 * [Scripting](scripting.md)
   * [User Input](scripting/user-input.md)
   * [Loops](scripting/loops.md)
+  * [Formatting](scripting/formatting.md)
 
