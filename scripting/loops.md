@@ -55,16 +55,25 @@ You typed: quit
 ➜
 ```
 
-Lets create loop that will wait for 5 seconds and then execute a command that connects to docker and gets logs. 
+Lets create loop that will wait for 5 seconds and then execute a command that connects to docker and gets logs.
 
 ```
 $ while sleep 5; do docker logs 0; done
 ```
 
-The alternative is to use watch. 
+The alternative is to use watch.
 
 ```
 $ watch -n 5 docker logs 0
+```
+
+Or lets say we want to run a command every second and separate them by --- line. 
+
+```
+while sleep 1; \
+  do docker logs 0; \
+  echo "--------------------------------------------"; \
+  done
 ```
 
 
