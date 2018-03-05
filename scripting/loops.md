@@ -1,6 +1,6 @@
 # Loops
 
-Loops make passible to iterate through values. 
+Loops make passible to iterate through values.
 
 ### For Loop
 
@@ -53,6 +53,18 @@ Please type something in (quit)
 quit
 You typed: quit
 ➜
+```
+
+Lets create loop that will wait for 5 seconds and then execute a command that connects to docker and gets logs. 
+
+```
+$ while sleep 5; do docker logs 0; done
+```
+
+The alternative is to use watch. 
+
+```
+$ watch -n 5 docker logs 0
 ```
 
 
