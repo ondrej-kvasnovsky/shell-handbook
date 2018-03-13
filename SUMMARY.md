@@ -8,4 +8,5 @@
   * [Loops](scripting/loops.md)
   * [Formatting](scripting/formatting.md)
 * [TCP](tcp.md)
+* [HTTP](http.md)
 
