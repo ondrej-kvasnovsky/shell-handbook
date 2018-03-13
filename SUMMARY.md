@@ -9,4 +9,5 @@
   * [Formatting](scripting/formatting.md)
 * [TCP](tcp.md)
 * [HTTP](http.md)
+* [Running Apps](running-apps.md)
 
