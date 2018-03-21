@@ -1,6 +1,6 @@
 # Linux Commands
 
-[history](https://ss64.com/bash/history.html) - returns all executed commands 
+[history](https://ss64.com/bash/history.html) - returns all executed commands
 
 * `Ctrl+R` to search in history
 * `!!` go to previous command
@@ -13,7 +13,7 @@ $ history
 2 vi index.js
 ```
 
-[ls](http://man7.org/linux/man-pages/man1/ls.1.html) - list files and directories 
+[ls](http://man7.org/linux/man-pages/man1/ls.1.html) - list files and directories
 
 Print content of current directory as long list `-l`, not ignoring entries starting with dot `-a`,  in columns, with file index `-i`, sorted by modification date `-t`.
 
@@ -26,6 +26,14 @@ total 40
 8599112008 24 -rw-r--r--   1 ok  staff  10467 Mar 13 09:05:17 2018 package-lock.json
 8599111546  0 drwxr-xr-x  43 ok  staff   1376 Mar 13 09:05:17 2018 node_modules
 8595834271  0 drwxr-xr-x   5 ok  staff    160 Mar 13 09:04:17 2018 ..
+```
+
+[find](http://man7.org/linux/man-pages/man1/find.1.html) - searches for files in directories
+
+Find all files larger than 100MB.
+
+```
+find /Users/ -type f -size +100M -print
 ```
 
 [ps](http://man7.org/linux/man-pages/man1/ps.1p.html) - reports processes status
@@ -46,8 +54,8 @@ $ tail -f logs/app.log
 
 ```
 $ du -h
- 16K	./node_modules/destroy
- 24K	./node_modules/content-type
+ 16K    ./node_modules/destroy
+ 24K    ./node_modules/content-type
 ```
 
 [htop](https://linux.die.net/man/1/htop) - interactive process viewer
