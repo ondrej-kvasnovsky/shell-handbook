@@ -44,6 +44,12 @@ The following will print all processes in full format
 $ ps -ef
 ```
 
+Find all java processes. 
+
+```
+$ ps -ef | grep "java"
+```
+
 [tail](http://man7.org/linux/man-pages/man1/tail.1.html) - prints out last lines from a file
 
 ```
