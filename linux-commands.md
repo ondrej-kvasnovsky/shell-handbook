@@ -44,10 +44,18 @@ The following will print all processes in full format
 $ ps -ef
 ```
 
-Find all java processes. 
+Find all java processes.
 
 ```
 $ ps -ef | grep "java"
+```
+
+[kill](http://man7.org/linux/man-pages/man2/kill.2.html) - kills a process by ID or name
+
+Kill all processes with `node` name.
+
+```
+pkill -f 'node'
 ```
 
 [tail](http://man7.org/linux/man-pages/man1/tail.1.html) - prints out last lines from a file
